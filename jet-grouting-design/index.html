@@ -26,18 +26,23 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: white; font-weight: 700; }
 .cat-sub-wrap a:hover{opacity:1;background:rgba(255,255,255,.05)}
 
 header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
 .sidebar .cat.open + .sub { display: flex; }
-    .container { padding: 1rem; }
+    
 body { font-family: var(--font-b); color: var(--text); background: var(--bg); line-height: 1.75; font-size: 15px; }
 * { margin:0; padding:0; box-sizing:border-box; }
 .cta .whatsapp-btn:hover { background: #1eb853; }
-    main { padding: 1.5rem; }
+    
 .sidebar .cat:hover { background: rgba(255,255,255,0.08); }
-    .content-area { flex-direction: column; }
+    
 .servicio p { margin: 0; font-size: .9rem; color: #475569; }
 .cta .contacto-line { font-size: 1rem; margin: .5rem 0; }
 .sidebar {
@@ -59,7 +64,7 @@ details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0
 .cat-name:hover{text-decoration:underline;text-underline-offset:3px}
 .header-contact a:hover { color: white; }
 .cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 
 .cta .whatsapp-btn {
     display: inline-block; background: #25D366; color: white;
@@ -136,7 +141,9 @@ th { background: var(--dark); color: white; font-weight: 600; font-family: var(-
 details[open] summary::before { content: '− '; }
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
-.cat-sub-wrap{padding:.4rem 0 .8rem;background:rgba(0,0,0,.15)}</style>
+.cat-sub-wrap{padding:.4rem 0 .8rem;background:rgba(0,0,0,.15)}
+
+</style>
 <style>
 @media(min-width:901px){
   .content-area{display:flex!important;gap:1.5rem!important;align-items:flex-start!important}
@@ -148,7 +155,9 @@ img{max-width:100%!important;height:auto!important}
   .sidebar{width:240px!important;flex-shrink:0!important;background:#0A0A0A!important;color:#FFF!important;border-radius:10px!important;position:sticky!important;top:1rem!important;max-height:calc(100vh - 2rem)!important;overflow-y:auto!important}
   .layout{display:grid!important;grid-template-columns:240px 1fr!important;gap:0!important;max-width:1200px!important;margin:0 auto!important;padding:2rem!important}
   .sidebar nav,.sidebar .nav{display:block!important}
-  main{flex:1!important;min-width:0!important}</style></head>
+  main{flex:1!important;min-width:0!important}
+}
+</style></head>
 <body>
 
 <header>
@@ -210,6 +219,8 @@ img{max-width:100%!important;height:auto!important}
 
             <section>
                 <h2>Our services</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>We offer two complementary jet grouting services tailored to Blackburn ground conditions.</p>
                 <style>.servicios-grid .servicio{flex:0 0 calc(50% - .5rem);min-width:260px;padding:1rem 1.2rem;border:1px solid #E5E7EB;border-radius:10px;background:#FFFFFF;position:relative;transition:border-color .18s,box-shadow .18s,transform .18s}.servicios-grid a.servicio-link:hover .servicio-arrow{transform:translateX(4px);opacity:1}.servicios-grid a.servicio-link:hover h3{color:#D97706}.servicios-grid a.servicio-link{display:block;text-decoration:none;color:inherit;cursor:pointer}.servicios-grid a.servicio-link:hover{border-color:#D97706;box-shadow:0 4px 14px rgba(0,0,0,.08);transform:translateY(-2px)}.servicio-arrow{position:absolute;right:1rem;bottom:.8rem;color:#D97706;font-weight:700;opacity:.55;transition:transform .18s,opacity .18s}.servicios-grid{display:flex;flex-wrap:wrap;gap:1rem;justify-content:flex-start}</style><div class="servicios-grid"><div class="servicio"><h3>Design-only jet grouting scheme</h3><p>We produce a full jet <a href="../grouting-design/" data-interlink="1">grouting design</a> including column layout, geometry, grout mix specification, and QA testing protocol. The deliverable includes a verification plan with trial column requirements and acceptance criteria, compliant with BS EN 12716. Suitable for projects where the client already has a preferred contractor and only needs the engineering design.</p></div><div class="servicio"><h3>Design-and-verify jet grouting package</h3><p>We design the treatment scheme and then supervise the trial column execution, interpret the exhumation results, and adjust the design parameters accordingly. This package includes on-site monitoring of pressure, flow rate, and lift speed during production, plus core sampling and UCS testing at 7 and 28 days. Ideal for complex sites in Blackburn where ground variability is high.</p></div></div>
             </section>
@@ -221,6 +232,8 @@ img{max-width:100%!important;height:auto!important}
 
             <section>
                 <h2>Coverage in Blackburn</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <link rel="stylesheet" href="/css/leaflet-4867.css"/>
                 <div id="mapa-ciudad"></div>
                 <script src="/js/leaflet-4867.js"></script>

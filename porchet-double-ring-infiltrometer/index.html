@@ -26,18 +26,23 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: white; font-weight: 700; }
 .cat-sub-wrap a:hover{opacity:1;background:rgba(255,255,255,.05)}
 
 header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
 .sidebar .cat.open + .sub { display: flex; }
-    .container { padding: 1rem; }
+    
 body { font-family: var(--font-b); color: var(--text); background: var(--bg); line-height: 1.75; font-size: 15px; }
 * { margin:0; padding:0; box-sizing:border-box; }
 .cta .whatsapp-btn:hover { background: #1eb853; }
-    main { padding: 1.5rem; }
+    
 .sidebar .cat:hover { background: rgba(255,255,255,0.08); }
-    .content-area { flex-direction: column; }
+    
 .servicio p { margin: 0; font-size: .9rem; color: #475569; }
 .cta .contacto-line { font-size: 1rem; margin: .5rem 0; }
 .sidebar {
@@ -59,7 +64,7 @@ details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0
 .cat-name:hover{text-decoration:underline;text-underline-offset:3px}
 .header-contact a:hover { color: white; }
 .cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 
 .cta .whatsapp-btn {
     display: inline-block; background: #25D366; color: white;
@@ -136,7 +141,9 @@ th { background: var(--dark); color: white; font-weight: 600; font-family: var(-
 details[open] summary::before { content: '− '; }
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
-.cat-sub-wrap{padding:.4rem 0 .8rem;background:rgba(0,0,0,.15)}</style>
+.cat-sub-wrap{padding:.4rem 0 .8rem;background:rgba(0,0,0,.15)}
+
+</style>
 <style>
 @media(min-width:901px){
   .content-area{display:flex!important;gap:1.5rem!important;align-items:flex-start!important}
@@ -148,7 +155,9 @@ img{max-width:100%!important;height:auto!important}
   .sidebar{width:240px!important;flex-shrink:0!important;background:#0A0A0A!important;color:#FFF!important;border-radius:10px!important;position:sticky!important;top:1rem!important;max-height:calc(100vh - 2rem)!important;overflow-y:auto!important}
   .layout{display:grid!important;grid-template-columns:240px 1fr!important;gap:0!important;max-width:1200px!important;margin:0 auto!important;padding:2rem!important}
   .sidebar nav,.sidebar .nav{display:block!important}
-  main{flex:1!important;min-width:0!important}</style></head>
+  main{flex:1!important;min-width:0!important}
+}
+</style></head>
 <body>
 
 <header>
@@ -192,6 +201,8 @@ img{max-width:100%!important;height:auto!important}
 
             <section>
                 <h2>Risks and considerations in Blackburn</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>We saw a site near Blackburn town centre where a drainage trench was dug after heavy rain. The contractor assumed uniform soils. Instead, they hit a clay lens at 1.2 m that stopped infiltration completely. Water pooled in the excavation for three days. That failure cost a week of programme time. A proper infiltration test beforehand would have caught that clay lens. In Blackburn's glacial till, missing a low-permeability seam is a common risk. We always test at multiple depths to map the vertical permeability profile.</p>
             </section>
 
@@ -216,6 +227,8 @@ img{max-width:100%!important;height:auto!important}
 
             <section>
                 <h2>Common questions</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <details><summary>How long does an infiltration test take on a typical Blackburn site?</summary><p>A single double-ring test takes about 2 to 3 hours for steady-state readings. The Porchet method can take 4 to 6 hours if the soil is clay-rich. We usually need one full day for a standard site with three test points.</p></details><details><summary>Do I need a soakaway design before the infiltration test?</summary><p>No. The test provides the design infiltration rate. That data goes into the soakaway sizing calculation. We run the test first, then the engineer uses the rate to size the drainage structure.</p></details><details><summary>What is the difference between Porchet and double-ring infiltrometer?</summary><p>The Porchet test is a falling-head method inside a single borehole. It measures vertical infiltration at depth. The double-ring uses two concentric rings with constant head to measure surface infiltration. Porchet is better for deeper layers; double-ring is for topsoil and sub-base.</p></details><details><summary>How much does an infiltration test cost in Blackburn?</summary><p>Typical cost for a site with three test points is between 260 and 330 GBP. This includes mobilisation, test execution, data <a href="/" data-interlink="1">analysis</a>, and a summary report. Larger sites or deeper boreholes may increase the cost.</p></details><details><summary>Can you test during wet weather in Blackburn?</summary><p>We can, but the results may show lower infiltration rates due to pre-wetted ground. Ideally we test when the soil moisture is representative of average conditions. If the ground is saturated from rain, we postpone or adjust the interpretation.</p></details>
             </section>
 

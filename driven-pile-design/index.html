@@ -26,18 +26,23 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: white; font-weight: 700; }
 .cat-sub-wrap a:hover{opacity:1;background:rgba(255,255,255,.05)}
 
 header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
 .sidebar .cat.open + .sub { display: flex; }
-    .container { padding: 1rem; }
+    
 body { font-family: var(--font-b); color: var(--text); background: var(--bg); line-height: 1.75; font-size: 15px; }
 * { margin:0; padding:0; box-sizing:border-box; }
 .cta .whatsapp-btn:hover { background: #1eb853; }
-    main { padding: 1.5rem; }
+    
 .sidebar .cat:hover { background: rgba(255,255,255,0.08); }
-    .content-area { flex-direction: column; }
+    
 .servicio p { margin: 0; font-size: .9rem; color: #475569; }
 .cta .contacto-line { font-size: 1rem; margin: .5rem 0; }
 .sidebar {
@@ -59,7 +64,7 @@ details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0
 .cat-name:hover{text-decoration:underline;text-underline-offset:3px}
 .header-contact a:hover { color: white; }
 .cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 
 .cta .whatsapp-btn {
     display: inline-block; background: #25D366; color: white;
@@ -136,7 +141,9 @@ th { background: var(--dark); color: white; font-weight: 600; font-family: var(-
 details[open] summary::before { content: '− '; }
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
-.cat-sub-wrap{padding:.4rem 0 .8rem;background:rgba(0,0,0,.15)}</style>
+.cat-sub-wrap{padding:.4rem 0 .8rem;background:rgba(0,0,0,.15)}
+
+</style>
 <style>
 @media(min-width:901px){
   .content-area{display:flex!important;gap:1.5rem!important;align-items:flex-start!important}
@@ -148,7 +155,9 @@ img{max-width:100%!important;height:auto!important}
   .sidebar{width:240px!important;flex-shrink:0!important;background:#0A0A0A!important;color:#FFF!important;border-radius:10px!important;position:sticky!important;top:1rem!important;max-height:calc(100vh - 2rem)!important;overflow-y:auto!important}
   .layout{display:grid!important;grid-template-columns:240px 1fr!important;gap:0!important;max-width:1200px!important;margin:0 auto!important;padding:2rem!important}
   .sidebar nav,.sidebar .nav{display:block!important}
-  main{flex:1!important;min-width:0!important}</style></head>
+  main{flex:1!important;min-width:0!important}
+}
+</style></head>
 <body>
 
 <header>
@@ -192,6 +201,8 @@ img{max-width:100%!important;height:auto!important}
 
             <section>
                 <h2>Risks and considerations in Blackburn</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>Blackburn sits about 130 m above sea level on the western edge of the Pennines, but the ground underneath is far from uniform. Glacial till here often hides pockets of loose sand and soft clay, and old coal workings from the 19th century create voids that can collapse under a driven pile. We have seen a rig sink half a metre overnight when a shallow drift mine was missed during the site investigation. That is why driven pile design in Blackburn must include a thorough review of historical mining records and a phased driving programme with early restrike measurements. If the refusal depth shifts more than 20 % from the calculated value, we stop the rig and run a placa de carga test on the adjacent ground to validate the bearing capacity.</p>
             </section>
 
@@ -216,6 +227,8 @@ img{max-width:100%!important;height:auto!important}
 
             <section>
                 <h2>Common questions</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <details><summary>What is the typical cost range for driven pile design in Blackburn?</summary><p>For a standard residential or commercial project the fee for driven pile design, including the geotechnical report and test pile <a href="/" data-interlink="1">analysis</a>, typically falls between £1,040 and £3,780. The final figure depends on the number of pile locations and the depth of investigation required.</p></details><details><summary>How do you handle old mine workings under a piling site?</summary><p>We review the Coal Authority records and any local mine plans before the design stage. If a void is suspected, we probe the ground with a rotary core barrel before driving and adjust the pile length to seat the toe below the zone of influence. We also specify a minimum of 3 m of competent strata below the pile toe.</p></details><details><summary>Can driven piles be used in Blackburn's clay soils without causing heave?</summary><p>Yes, provided the piles are designed as displacement piles with a sufficient spacing – typically 3 times the pile diameter centre-to-centre. We also monitor the ground level during installation and install relief piles if the clay is sensitive. The key is to control the driving rate and avoid over-driving in the upper 5 m.</p></details><details><summary>Do you provide pile integrity testing after installation?</summary><p>We always recommend a low-strain integrity test (PIT) on at least 20 % of the production piles. For critical structures we also run cross-hole sonic logging on selected piles. The test results are compared against the design assumptions, and any anomalies are investigated with a core drill through the pile.</p></details>
             </section>
 

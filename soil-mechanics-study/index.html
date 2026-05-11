@@ -26,18 +26,23 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: white; font-weight: 700; }
 .cat-sub-wrap a:hover{opacity:1;background:rgba(255,255,255,.05)}
 
 header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
 .sidebar .cat.open + .sub { display: flex; }
-    .container { padding: 1rem; }
+    
 body { font-family: var(--font-b); color: var(--text); background: var(--bg); line-height: 1.75; font-size: 15px; }
 * { margin:0; padding:0; box-sizing:border-box; }
 .cta .whatsapp-btn:hover { background: #1eb853; }
-    main { padding: 1.5rem; }
+    
 .sidebar .cat:hover { background: rgba(255,255,255,0.08); }
-    .content-area { flex-direction: column; }
+    
 .servicio p { margin: 0; font-size: .9rem; color: #475569; }
 .cta .contacto-line { font-size: 1rem; margin: .5rem 0; }
 .sidebar {
@@ -59,7 +64,7 @@ details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0
 .cat-name:hover{text-decoration:underline;text-underline-offset:3px}
 .header-contact a:hover { color: white; }
 .cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 
 .cta .whatsapp-btn {
     display: inline-block; background: #25D366; color: white;
@@ -136,7 +141,9 @@ th { background: var(--dark); color: white; font-weight: 600; font-family: var(-
 details[open] summary::before { content: '− '; }
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
-.cat-sub-wrap{padding:.4rem 0 .8rem;background:rgba(0,0,0,.15)}</style>
+.cat-sub-wrap{padding:.4rem 0 .8rem;background:rgba(0,0,0,.15)}
+
+</style>
 <style>
 @media(min-width:901px){
   .content-area{display:flex!important;gap:1.5rem!important;align-items:flex-start!important}
@@ -148,7 +155,9 @@ img{max-width:100%!important;height:auto!important}
   .sidebar{width:240px!important;flex-shrink:0!important;background:#0A0A0A!important;color:#FFF!important;border-radius:10px!important;position:sticky!important;top:1rem!important;max-height:calc(100vh - 2rem)!important;overflow-y:auto!important}
   .layout{display:grid!important;grid-template-columns:240px 1fr!important;gap:0!important;max-width:1200px!important;margin:0 auto!important;padding:2rem!important}
   .sidebar nav,.sidebar .nav{display:block!important}
-  main{flex:1!important;min-width:0!important}</style></head>
+  main{flex:1!important;min-width:0!important}
+}
+</style></head>
 <body>
 
 <header>
@@ -192,6 +201,8 @@ img{max-width:100%!important;height:auto!important}
 
             <section>
                 <h2>Risks and considerations in Blackburn</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>Eurocode 7 (BS EN 1997-1:2004) requires a ground investigation for all geotechnical design. In Blackburn, the main risk is natural variability within the glacial till. A thin sand layer can change bearing capacity by 50%. So can a clay seam. Without a proper soil mechanics study your foundation design becomes guesswork. Overdesign costs money. Underdesign risks failure. We have seen projects where a single trial pit missed a soft zone. A soil mechanics study with multiple boreholes and laboratory testing removes that risk. It gives the structural engineer reliable design parameters.</p>
             </section>
 
@@ -216,6 +227,8 @@ img{max-width:100%!important;height:auto!important}
 
             <section>
                 <h2>Common questions</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <details><summary>How many boreholes do I need for a soil mechanics study in Blackburn?</summary><p>It depends on the site area and development type. For a single house plot we typically recommend two boreholes to 5-8 m depth. For larger developments we follow BS 5930 guidance: one borehole per 300-500 m2. Our team can advise after a site walkover.</p></details><details><summary>What is the typical cost of a soil mechanics study in Blackburn?</summary><p>The cost ranges from £2,320 to £4,220 depending on borehole depth, number of samples, and test scope. A basic study for a house plot is at the lower end. A full commercial investigation with triaxial and consolidation tests sits at the higher end. We provide a fixed quote after reviewing the site conditions.</p></details><details><summary>How long does a soil mechanics study take from start to finish?</summary><p>Fieldwork takes one to two days. Laboratory testing runs two to three weeks. Reporting adds three to five days. Total turnaround is usually three to four weeks. We can expedite for urgent projects.</p></details><details><summary>What is the difference between a soil mechanics study and a site investigation?</summary><p>A site investigation is the broader programme that includes desk study, walkover, trial pits, and boreholes. A soil mechanics study is the specific laboratory testing phase. We provide the soil mechanics study as part of a full investigation or as a standalone service if you already have field logs.</p></details>
             </section>
 

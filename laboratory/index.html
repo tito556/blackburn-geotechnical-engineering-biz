@@ -23,18 +23,23 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: white; font-weight: 700; }
 .cat-sub-wrap a:hover{opacity:1;background:rgba(255,255,255,.05)}
 
 header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
 .sidebar .cat.open + .sub { display: flex; }
-    .container { padding: 1rem; }
+    
 body { font-family: var(--font-b); color: var(--text); background: var(--bg); line-height: 1.75; font-size: 15px; }
 * { margin:0; padding:0; box-sizing:border-box; }
 .cta .whatsapp-btn:hover { background: #1eb853; }
-    main { padding: 1.5rem; }
+    
 .sidebar .cat:hover { background: rgba(255,255,255,0.08); }
-    .content-area { flex-direction: column; }
+    
 .servicio p { margin: 0; font-size: .9rem; color: #475569; }
 .cta .contacto-line { font-size: 1rem; margin: .5rem 0; }
 .sidebar {
@@ -56,7 +61,7 @@ details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0
 .cat-name:hover{text-decoration:underline;text-underline-offset:3px}
 .header-contact a:hover { color: white; }
 .cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 
 .cta .whatsapp-btn {
     display: inline-block; background: #25D366; color: white;
@@ -133,7 +138,9 @@ th { background: var(--dark); color: white; font-weight: 600; font-family: var(-
 details[open] summary::before { content: '− '; }
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
-.cat-sub-wrap{padding:.4rem 0 .8rem;background:rgba(0,0,0,.15)}</style>
+.cat-sub-wrap{padding:.4rem 0 .8rem;background:rgba(0,0,0,.15)}
+
+</style>
 <style>
 @media(min-width:901px){
   .content-area{display:flex!important;gap:1.5rem!important;align-items:flex-start!important}
@@ -145,7 +152,9 @@ img{max-width:100%!important;height:auto!important}
   .sidebar{width:240px!important;flex-shrink:0!important;background:#0A0A0A!important;color:#FFF!important;border-radius:10px!important;position:sticky!important;top:1rem!important;max-height:calc(100vh - 2rem)!important;overflow-y:auto!important}
   .layout{display:grid!important;grid-template-columns:240px 1fr!important;gap:0!important;max-width:1200px!important;margin:0 auto!important;padding:2rem!important}
   .sidebar nav,.sidebar .nav{display:block!important}
-  main{flex:1!important;min-width:0!important}</style><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"description":"Geotechnical laboratory services in Blackburn deliver essential data on the physical and mechanical behaviour of soils, supporting compliance with BS 1377","@id":"https://blackburn.geotechnical-engineering.biz/laboratory/","inLanguage":"en","name":"Laboratory in Blackburn – UK","@type":"WebPage","isPartOf":{"url":"https://blackburn.geotechnical-engineering.biz","@id":"https://blackburn.geotechnical-engineering.biz/#website-4867","@type":"WebSite"},"url":"https://blackburn.geotechnical-engineering.biz/laboratory/"},{"@type":"BreadcrumbList","itemListElement":[{"name":"Home","position":1,"item":"https://blackburn.geotechnical-engineering.biz/","@type":"ListItem"},{"name":"Laboratory","position":2,"item":"https://blackburn.geotechnical-engineering.biz/laboratory/","@type":"ListItem"}]},{"name":"Laboratory","@type":"ItemList","itemListElement":[{"name":"Atterberg limits","position":1,"url":"https://blackburn.geotechnical-engineering.biz/atterberg-limits/","@type":"ListItem"},{"name":"Direct shear test","position":2,"url":"https://blackburn.geotechnical-engineering.biz/direct-shear/","@type":"ListItem"},{"name":"Residual soil characterization","position":3,"url":"https://blackburn.geotechnical-engineering.biz/residual-soil-characterization/","@type":"ListItem"},{"name":"Soil classification (USCS/AASHTO)","position":4,"url":"https://blackburn.geotechnical-engineering.biz/soil-classification/","@type":"ListItem"},{"name":"Soil mechanics study","position":5,"url":"https://blackburn.geotechnical-engineering.biz/soil-mechanics-study/","@type":"ListItem"},{"name":"Triaxial test","position":6,"url":"https://blackburn.geotechnical-engineering.biz/triaxial/","@type":"ListItem"}]}]}</script></head>
+  main{flex:1!important;min-width:0!important}
+}
+</style><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"description":"Geotechnical laboratory services in Blackburn deliver essential data on the physical and mechanical behaviour of soils, supporting compliance with BS 1377","@id":"https://blackburn.geotechnical-engineering.biz/laboratory/","inLanguage":"en","name":"Laboratory in Blackburn – UK","@type":"WebPage","isPartOf":{"url":"https://blackburn.geotechnical-engineering.biz","@id":"https://blackburn.geotechnical-engineering.biz/#website-4867","@type":"WebSite"},"url":"https://blackburn.geotechnical-engineering.biz/laboratory/"},{"@type":"BreadcrumbList","itemListElement":[{"name":"Home","position":1,"item":"https://blackburn.geotechnical-engineering.biz/","@type":"ListItem"},{"name":"Laboratory","position":2,"item":"https://blackburn.geotechnical-engineering.biz/laboratory/","@type":"ListItem"}]},{"name":"Laboratory","@type":"ItemList","itemListElement":[{"name":"Atterberg limits","position":1,"url":"https://blackburn.geotechnical-engineering.biz/atterberg-limits/","@type":"ListItem"},{"name":"Direct shear test","position":2,"url":"https://blackburn.geotechnical-engineering.biz/direct-shear/","@type":"ListItem"},{"name":"Residual soil characterization","position":3,"url":"https://blackburn.geotechnical-engineering.biz/residual-soil-characterization/","@type":"ListItem"},{"name":"Soil classification (USCS/AASHTO)","position":4,"url":"https://blackburn.geotechnical-engineering.biz/soil-classification/","@type":"ListItem"},{"name":"Soil mechanics study","position":5,"url":"https://blackburn.geotechnical-engineering.biz/soil-mechanics-study/","@type":"ListItem"},{"name":"Triaxial test","position":6,"url":"https://blackburn.geotechnical-engineering.biz/triaxial/","@type":"ListItem"}]}]}</script></head>
 <body>
 
 <header>
@@ -213,7 +222,14 @@ img{max-width:100%!important;height:auto!important}
             </section>
 
             
-<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../atterberg-limits/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Atterberg limits</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../direct-shear/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Direct shear test</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../residual-soil-characterization/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Residual soil characterization</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../soil-classification/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Soil classification (USCS/AASHTO)</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../soil-mechanics-study/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Soil mechanics study</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../triaxial/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Triaxial test</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section></main>
+<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
+<img src="/img/ensayo-triaxial-1.webp" alt="Laboratory in Blackburn" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<p>In Blackburn, our geotechnical laboratory services provide a comprehensive suite of tests to characterise the mechanical, physical, and chemical properties of soils and rocks recovered from ground investigations. The local geology is dominated by Carboniferous Millstone Grit and Coal Measures, often overlain by glacial till and alluvial deposits along the River Darwen corridor, which demands a rigorous approach to laboratory scheduling. We support site characterisation by linking field sampling directly to advanced lab programmes, ensuring compliance with the relevant UK standards, including BS 5930:2015+A1:2020 and BS 1377. This integrated service covers routine classification, strength, compressibility, and chemical aggressiveness testing, all tailored to the specific lithologies encountered during the <a href="/investigation/">investigation</a> phase.</p>
+<p>Our testing methodologies are strictly aligned with the UK Specification for Ground Investigation and Eurocode 7, utilising accredited procedures for index tests such as moisture content, Atterberg limits, and particle size distribution by wet sieving and sedimentation. For strength and deformation assessment, we execute unconsolidated undrained triaxial tests on cohesive samples and point load tests on rock core, with effective stress parameters derived where required. Chemical testing to BRE Special Digest 1 is routinely performed on samples from brownfield sites to assess sulfate and pH conditions for concrete design. These lab results directly validate field parameters obtained from techniques like the <a href="/standard-penetration/">Standard Penetration Test (SPT)</a> and <a href="/cone-penetration/">Cone Penetration Test (CPT)</a>, creating a robust geotechnical model.</p>
+<p>Typical projects in Blackburn that depend on our laboratory data include the structural assessment of mill foundations on variable Made Ground, residential developments on glacial till slopes, and highway drainage schemes along the A666 and A674 corridors. For schemes where shallow foundations are planned, we correlate lab-derived undrained shear strengths with <a href="/field-vane-shear/">field vane shear test (VST)</a> results to refine bearing capacity calculations. On infrastructure upgrades, consolidation and swelling tests are critical for predicting long-term settlement of embankments founded on the compressible alluvial clays prevalent in the Darwen Valley, ensuring that earthworks specifications meet the requirements of the Manual of Contract Documents for Highway Works.</p>
+<img src="/img/limites-atterberg-2.webp" alt="Laboratory in Blackburn" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+
+<p>Upon completion of physical and chemical testing, we deliver a factual and interpretative report presenting all results in accordance with AGS4 data format, including statistical summaries and derived design parameters. Our value lies in accelerating the transition from site investigation to design by providing high-quality, repeatable data that reduces uncertainty in geotechnical parameters. This enables engineers to optimise foundation solutions and earthworks strategies with confidence, directly addressing the challenges posed by Blackburn’s complex post-industrial and natural ground conditions.</p></div></section></main>
     </div>
 </div>
 

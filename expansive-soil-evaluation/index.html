@@ -26,18 +26,23 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: white; font-weight: 700; }
 .cat-sub-wrap a:hover{opacity:1;background:rgba(255,255,255,.05)}
 
 header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
 .sidebar .cat.open + .sub { display: flex; }
-    .container { padding: 1rem; }
+    
 body { font-family: var(--font-b); color: var(--text); background: var(--bg); line-height: 1.75; font-size: 15px; }
 * { margin:0; padding:0; box-sizing:border-box; }
 .cta .whatsapp-btn:hover { background: #1eb853; }
-    main { padding: 1.5rem; }
+    
 .sidebar .cat:hover { background: rgba(255,255,255,0.08); }
-    .content-area { flex-direction: column; }
+    
 .servicio p { margin: 0; font-size: .9rem; color: #475569; }
 .cta .contacto-line { font-size: 1rem; margin: .5rem 0; }
 .sidebar {
@@ -59,7 +64,7 @@ details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0
 .cat-name:hover{text-decoration:underline;text-underline-offset:3px}
 .header-contact a:hover { color: white; }
 .cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 
 .cta .whatsapp-btn {
     display: inline-block; background: #25D366; color: white;
@@ -136,7 +141,9 @@ th { background: var(--dark); color: white; font-weight: 600; font-family: var(-
 details[open] summary::before { content: '− '; }
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
-.cat-sub-wrap{padding:.4rem 0 .8rem;background:rgba(0,0,0,.15)}</style>
+.cat-sub-wrap{padding:.4rem 0 .8rem;background:rgba(0,0,0,.15)}
+
+</style>
 <style>
 @media(min-width:901px){
   .content-area{display:flex!important;gap:1.5rem!important;align-items:flex-start!important}
@@ -148,7 +155,9 @@ img{max-width:100%!important;height:auto!important}
   .sidebar{width:240px!important;flex-shrink:0!important;background:#0A0A0A!important;color:#FFF!important;border-radius:10px!important;position:sticky!important;top:1rem!important;max-height:calc(100vh - 2rem)!important;overflow-y:auto!important}
   .layout{display:grid!important;grid-template-columns:240px 1fr!important;gap:0!important;max-width:1200px!important;margin:0 auto!important;padding:2rem!important}
   .sidebar nav,.sidebar .nav{display:block!important}
-  main{flex:1!important;min-width:0!important}</style></head>
+  main{flex:1!important;min-width:0!important}
+}
+</style></head>
 <body>
 
 <header>
@@ -192,6 +201,8 @@ img{max-width:100%!important;height:auto!important}
 
             <section>
                 <h2>Risks and considerations in Blackburn</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>Eurocode 7 (EN 1997-1:2004) classifies expansive soils as a serviceability limit state risk. In Blackburn, the combination of high plasticity clay and variable rainfall creates differential heave beneath shallow foundations. We have seen cases where a dry summer followed by a wet winter lifted a corner of a house by 40 mm. That is enough to crack brickwork and jam doors. Our expansive soil evaluation identifies the swelling pressure and depth of active zone. With that data, engineers can design foundations that accommodate movement or isolate the structure from the clay.</p>
             </section>
 
@@ -216,6 +227,8 @@ img{max-width:100%!important;height:auto!important}
 
             <section>
                 <h2>Common questions</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <details><summary>How long does an expansive soil evaluation take in Blackburn?</summary><p>Sampling and field testing take one day per site. Laboratory analysis adds 5 to 7 working days. Full report delivered within 10 working days from sample arrival.</p></details><details><summary>What is the typical cost for expansive soil evaluation in Blackburn?</summary><p>The range for a standard residential evaluation is between £500 and £1,420. This includes sampling, <a href="../atterberg-limits/" data-interlink="1">Atterberg limits</a>, free swell index, and a written report. Larger sites or deeper boreholes increase the cost.</p></details><details><summary>Can I build on expansive clay in Blackburn without special foundations?</summary><p>It is risky. High plasticity clays can heave up to 50 mm annually. Without evaluation, you risk structural damage. Most local authorities now require a shrink-swell assessment for new foundations in Blackburn.</p></details><details><summary>What is the difference between swelling pressure and free swell index?</summary><p>Free swell index measures how much a soil volume increases when submerged in water. Swelling pressure measures the force the soil exerts when confined. Both are needed to design foundations that resist heave.</p></details>
             </section>
 
