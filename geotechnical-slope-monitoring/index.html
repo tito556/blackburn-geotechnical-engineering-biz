@@ -174,6 +174,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#E76F51) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head>
 <body>
 
@@ -246,7 +282,7 @@ header.hero, .hero { position: relative !important; }
                 <h2>Common questions</h2>
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
 
-                <details><summary>How does monthly slope monitoring prevent failure in Blackburn's terrain?</summary><p>Blackburn's slopes are underlain by Coal Measures interbedded with sandstone, which can soften when water seeps along bedding planes. Monthly readings catch the progressive creep before it becomes a rapid slide. The inclinometer data combined with piezometer levels gives a lead time of weeks to months, enough to install drainage or trim the slope.</p></details><details><summary>What is the typical cost of monthly geotechnical slope monitoring in Blackburn?</summary><p>For a standard slope with 3 inclinometers and 5 surface markers, the monthly service runs between £360 and £1,110 including data collection, field report, and trend analysis. The range depends on site accessibility, casing depth, and whether we need night-time traffic management near the M65.</p></details><details><summary>How long does the monitoring programme typically last?</summary><p>Most projects run 12 to 24 months, covering at least two wet winters. If the slope stabilises after drainage works, we may reduce to quarterly visits. We review the trend every six months with the client and adjust the frequency accordingly.</p></details><details><summary>What qualifications does your monitoring team hold?</summary><p>Our field technicians are competent in BS EN 1997-1 and hold CITB safety cards. The laboratory is ISO 17025-accredited for geotechnical testing. Each monitoring report is reviewed by a chartered geotechnical engineer registered with the ICE or Geological Society.</p></details>
+                <details><summary>How does monthly slope monitoring prevent failure in Blackburn's terrain?</summary><p>Blackburn's slopes are underlain by Coal Measures interbedded with sandstone, which can soften when water seeps along bedding planes. Monthly readings catch the progressive creep before it becomes a rapid slide. The inclinometer data combined with piezometer levels gives a lead time of weeks to months, enough to install drainage or trim the slope.</p></details><details><summary>What is the typical cost of monthly geotechnical slope monitoring in Blackburn?</summary><p>For a standard slope with 3 inclinometers and 5 surface markers, the monthly service runs between £360 and £1,110 including data collection, field report, and trend analysis. The range depends on site accessibility, casing depth, and whether we need night-time traffic management near the M65.</p></details><details><summary>How long does the monitoring programme typically last?</summary><p>Most projects run 12 to 24 months, covering at least two wet winters. If the slope stabilises after drainage works, we may reduce to quarterly visits. We review the trend every six months with the client and adjust the frequency accordingly.</p></details><details><summary>What qualifications does your monitoring team hold?</summary><p>Our field technicians are competent in BS EN 1997-1 and hold CITB safety cards. The <a href="/laboratory/">laboratory</a> is ISO 17025-accredited for geotechnical testing. Each monitoring report is reviewed by a chartered geotechnical engineer registered with the ICE or Geological Society.</p></details>
             </section>
 
             <section>

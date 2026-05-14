@@ -174,6 +174,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#E76F51) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head>
 <body>
 
@@ -244,7 +280,7 @@ header.hero, .hero { position: relative !important; }
 
             <section>
                 <h2>Common questions</h2>
-                <details><summary>What is the difference between N-value and N60 in the SPT (Standard Penetration Test)?</summary><p>The raw N-value is the total number of blows for the last 300 mm of penetration. N60 corrects this value to a reference energy ratio of 60%, accounting for variations in hammer efficiency, rod length, and anvil condition. Most design codes in the UK, including Eurocode 7, require N60 or N1,60 (energy- and overburden-corrected) for bearing capacity and liquefaction assessment.</p></details><details><summary>How deep should SPT boreholes be in Blackburn’s glacial till?</summary><p>Depth depends on the structure’s load and the soil profile. For typical two‑storey houses, 6–8 m depth is usually enough to reach the competent till. For larger commercial buildings, boreholes should extend at least 3 m into the bearing stratum below the critical load zone, often 10–15 m deep. The SPT is performed every metre to capture variations in density and stiffness.</p></details><details><summary>Can the SPT (Standard Penetration Test) detect liquefaction risk in Blackburn?</summary><p>Yes. The SPT is the primary method for liquefaction assessment in the UK. N-values from the test are used in the Youd‑Idriss (2001) method to calculate cyclic resistance ratio (CRR). In Blackburn, loose granular layers beneath the till or in former river channels can be susceptible. The team also collects undisturbed samples for cyclic triaxial testing when liquefaction is a concern.</p></details><details><summary>How much does an SPT (Standard Penetration Test) cost in Blackburn?</summary><p>The typical cost for an SPT (Standard Penetration Test) in Blackburn ranges from £430 to £560 per test, including mobilisation, drilling, and a basic report with corrected N-values. The total project cost depends on the number of boreholes, depth, and any additional laboratory testing. A detailed quote is provided after reviewing the site layout and ground conditions.</p></details>
+                <details><summary>What is the difference between N-value and N60 in the SPT (Standard Penetration Test)?</summary><p>The raw N-value is the total number of blows for the last 300 mm of penetration. N60 corrects this value to a reference energy ratio of 60%, accounting for variations in hammer efficiency, rod length, and anvil condition. Most design codes in the UK, including Eurocode 7, require N60 or N1,60 (energy- and overburden-corrected) for bearing capacity and liquefaction assessment.</p></details><details><summary>How deep should SPT boreholes be in Blackburn’s glacial till?</summary><p>Depth depends on the structure’s load and the soil profile. For typical two‑storey houses, 6–8 m depth is usually enough to reach the competent till. For larger commercial buildings, boreholes should extend at least 3 m into the bearing stratum below the critical load zone, often 10–15 m deep. The SPT is performed every metre to capture variations in density and stiffness.</p></details><details><summary>Can the SPT (Standard Penetration Test) detect liquefaction risk in Blackburn?</summary><p>Yes. The SPT is the primary method for liquefaction assessment in the UK. N-values from the test are used in the Youd‑Idriss (2001) method to calculate cyclic resistance ratio (CRR). In Blackburn, loose granular layers beneath the till or in former river channels can be susceptible. The team also collects undisturbed samples for cyclic <a href="/triaxial/">triaxial</a> testing when liquefaction is a concern.</p></details><details><summary>How much does an SPT (Standard Penetration Test) cost in Blackburn?</summary><p>The typical cost for an SPT (Standard Penetration Test) in Blackburn ranges from £430 to £560 per test, including mobilisation, drilling, and a basic report with corrected N-values. The total project cost depends on the number of boreholes, depth, and any additional laboratory testing. A detailed quote is provided after reviewing the site layout and ground conditions.</p></details>
             </section>
 
             <section>
